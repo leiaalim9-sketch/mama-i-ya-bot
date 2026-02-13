@@ -237,4 +237,5 @@ def daily_sender():
 if __name__ == '__main__':
     threading.Thread(target=daily_sender, daemon=True).start()
     logger.info("Бот запущен. Ожидание сообщений...")
+
     bot.infinity_polling(timeout=25, long_polling_timeout=20)
