@@ -11,7 +11,7 @@ import logging
 #   Настройки
 # ────────────────────────────────────────────────
 
-API_TOKEN = 'ВАШ_ТОКЕН_БОТА_ЗДЕСЬ'8502414329:AAFwjBGRkSM1bqBsqGdVxe-h8YDDcGUIyes  # ← ВСТАВЬ СВОЙ ТОКЕН
+API_TOKEN = 'ВАШ_ТОКЕН_БОТА_ЗДЕСЬ'8502414329:AAFwjBGRkSM1bqBsqGdVxe-h8YDDcGUIyes 
 ADMIN_ID = 634320645
 GROUP_LINK = "https://t.me/+rd1Y4siYtlA2NjIy"
 
@@ -241,6 +241,7 @@ if __name__ == '__main__':
     logger.info("Бот запущен. Ожидание сообщений...")
 
     bot.infinity_polling(timeout=25, long_polling_timeout=20)
+
 
 
 
