@@ -21,7 +21,7 @@ DAILY_SEND_MINUTE = 0
 
 PAYMENT_URL = "https://your-payment-link.example.com/course"  # ← ВСТАВЬ СВОЮ ССЫЛКУ НА ОПЛАТУ
 
-import content  # файл content.py должен быть в той же папке
+import sys sys.path.append('.') import content
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -239,3 +239,4 @@ if __name__ == '__main__':
     logger.info("Бот запущен. Ожидание сообщений...")
 
     bot.infinity_polling(timeout=25, long_polling_timeout=20)
+
